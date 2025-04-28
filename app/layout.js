@@ -1,8 +1,6 @@
 import { Geist, Geist_Mono, Anek_Devanagari } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { ThemeProvider } from "next-themes";
-import Providers from "./provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +14,7 @@ const geistMono = Geist_Mono({
 
 const devanagari = Anek_Devanagari({
   variable: "--font-anek-devanagari",
-  weight: ["400", "700"], // Ensure these weights are supported
+  weight: ["400", "500", "600", "700"], // Ensure these weights are supported
   display: "swap",
   fallback: ["system-ui", "sans-serif"], // Fallback fonts
 });
@@ -36,8 +34,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased" style={{ fontFamily: "'Anek Devanagari', sans-serif" }}>
-          <Navbar />
-          {children}
+        <Navbar />
+        {children}
       </body>
     </html>
   );

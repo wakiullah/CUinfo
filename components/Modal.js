@@ -135,7 +135,7 @@ const Main = () => {
                     </div>
                 </div>
             )}
-            <div className={`min-h-screen bg-gradient-to-r from-[#f3f4f6] via-[#e5e7eb] to-[#d1d5db] dark:from-[#1e293b] dark:via-[#0f172a] dark:to-[#0a0e1a] text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center p-4 ${isModalOpen ? 'blur-sm' : ''}`}>
+            <div className={`min-h-screen dark:bg-gray-900 bg-gray-100 flex flex-col items-center justify-center p-4 ${isModalOpen ? 'blur-sm' : ''}`}>
                 <h1 className="text-4xl font-bold mb-8 text-center">University Information</h1>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
                     {universityData.map((category) => (
