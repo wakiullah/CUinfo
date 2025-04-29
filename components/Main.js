@@ -4,7 +4,6 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { universityData, othersInfo } from "../data/versitydata";
 import SingleDataInfo from "./signletypeinfo";
 import { toast } from "react-toastify";
-import { CiSquareInfo } from "react-icons/ci";
 
 
 const Main = () => {
