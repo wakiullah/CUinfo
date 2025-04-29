@@ -113,9 +113,9 @@ const Main = () => {
         </div>
       )}
       <div className={`min-h-screen dark:bg-gray-900 bg-white text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center p-4 ${isModalOpen ? 'blur-sm' : ''}`}>
-        <SingleDataInfo title={`CU Informations`} data={universityData} handleButtonClick={handleButtonClick} />
+        <SingleDataInfo title={`CU Information`} data={universityData} handleButtonClick={handleButtonClick} />
         <div className="mt-10"></div>
-        <SingleDataInfo title="Others Information" data={othersInfo} handleButtonClick={handleButtonClick} />
+        <SingleDataInfo title="Other Information" data={othersInfo} handleButtonClick={handleButtonClick} />
 
       </div>
     </div>
