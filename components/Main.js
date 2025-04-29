@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 import { universityData, othersInfo } from "../data/versitydata";
 import SingleDataInfo from "./signletypeinfo";
+import { toast } from "react-toastify";
+import { CiSquareInfo } from "react-icons/ci";
+
 
 const Main = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,9 +25,13 @@ const Main = () => {
   const handleCopy = (text) => {
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(text).then(() => {
-        alert(`Copied: ${text}`);
+        const sucessMsg = toast.success(`Copied: ${text}`, {
+          theme: "dark",
+        })
       }).catch(err => {
-        console.error('Failed to copy: ', err);
+        const errorMsg = toast.error(`Failed to copy: ${text}`, {
+          theme: "dark",
+        })
       });
     } else {
       const textarea = document.createElement('textarea');
@@ -33,9 +40,14 @@ const Main = () => {
       textarea.select();
       try {
         document.execCommand('copy');
-        alert(`Copied: ${text}`);
+        const sucessMsg = toast.success(`Copied: ${text}`, {
+          theme: "dark",
+        })
+
       } catch (err) {
-        console.error('Fallback: Oops, unable to copy', err);
+        const errorMsg = toast.error(`Failed to copy: ${text}`, {
+          theme: "dark",
+        })
       }
       document.body.removeChild(textarea);
     }
@@ -71,7 +83,7 @@ const Main = () => {
                       <p className="dark:text-white text-gray-800">
                         <span>Phone: </span>
                         <span
-                          className=" cursor-pointer hover:underline dark:text-gray-800 text-amber-800"
+                          className=" cursor-pointer hover:underline dark:text-white text-amber-800"
                           onClick={() => handleCopy(item.phone)}
                         >
                           {item.phone}
@@ -80,7 +92,7 @@ const Main = () => {
                       <p className="dark:text-white text-gray-800">
                         <span>Email: </span>
                         <span
-                          className=" cursor-pointer hover:underline dark:text-gray-800 text-amber-800"
+                          className=" cursor-pointer hover:underline dark:text-white text-amber-800"
                           onClick={() => handleCopy(item.email)}
                         >
                           {item.email}
@@ -101,7 +113,7 @@ const Main = () => {
         </div>
       )}
       <div className={`min-h-screen dark:bg-gray-900 bg-white text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center p-4 ${isModalOpen ? 'blur-sm' : ''}`}>
-        <SingleDataInfo title="CU Informations" data={universityData} handleButtonClick={handleButtonClick} />
+        <SingleDataInfo title={`CU Informations`} data={universityData} handleButtonClick={handleButtonClick} />
         <div className="mt-10"></div>
         <SingleDataInfo title="Others Information" data={othersInfo} handleButtonClick={handleButtonClick} />
 

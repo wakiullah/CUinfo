@@ -19,11 +19,15 @@ const Navbar = () => {
 
             {/* Menu for larger screens */}
             <ul className="hidden md:flex space-x-6 font-semibold">
-                <li className="cursor-pointer hover:text-blue-500" >Hire Me</li>
+                <li className="cursor-pointer hover:text-blue-500">
+                    <Link href="/">Home</Link>
+                </li>
                 <li className="cursor-pointer hover:text-blue-500">
                     <Link href="/inform">Inform Mising</Link>
                 </li>
-                <li className="cursor-pointer hover:text-blue-500">Einfo</li>
+                <li className="cursor-pointer hover:text-blue-500">
+                    <Link href="/hireme">Hire Me</Link>
+                </li>
             </ul>
 
             <div className="md:hidden">
@@ -54,8 +58,15 @@ const Navbar = () => {
                             <FaTimes className="mr-2" /> Close
                         </button>
                     </div>
-                    <ul className="space-y-4 text-xl font-semibold">
-                        <Link onClick={() => setIsMenuOpen(false)} href="/inform" className="cursor-pointer hover:text-blue-500">Inform Mising</Link>
+                    <ul className="space-y-4 text-lg font-medium">
+                        <li>
+                            <Link onClick={() => setIsMenuOpen(false)} href="/" className=" cursor-pointer hover:text-blue-500">
+                                Home</Link>
+                        </li>
+
+                        <Link onClick={() => setIsMenuOpen(false)} href="/hireme" className="cursor-pointer hover:text-blue-500 mt-3 block">Hire Me</Link>
+
+                        <Link onClick={() => setIsMenuOpen(false)} href="/inform" className="cursor-pointer hover:text-blue-500 ">Inform Missing</Link>
                     </ul>
                 </div>
             </div>
