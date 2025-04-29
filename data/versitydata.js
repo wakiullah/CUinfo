@@ -4,6 +4,17 @@ export const universityData = [
         items: [
             { name: "Medical Center", phone: "​+8801764565703​", email: "Empty" }
         ],
+    }, {
+        category: "Pro-Vice Chancellors",
+        items: [
+            { name: "Dr. Mohammed Shamim Uddin Khan", phone: "+8801711721486", email: "shamim@cu.ac.bd" },
+            { name: "Md. Kamal Uddin", phone: "+8801718306616", email: "kamalircu@yahoo.com" }
+        ],
+    }, {
+        category: "Registrar (In-charge)",
+        items: [
+            { name: "Dr. Mohammed Saiful Islam", phone: "+880-31-717112", email: "registrarcu66@cu.ac.bd" }
+        ],
     },
     {
         category: "Proctors",
@@ -18,16 +29,10 @@ export const universityData = [
         ],
     },
     {
-        category: "Registrar (In-charge)",
+        category: "Provosts",
         items: [
-            { name: "Dr. Mohammed Saiful Islam", phone: "+880-31-717112", email: "registrarcu66@cu.ac.bd" }
-        ],
-    },
-    {
-        category: "Pro-Vice Chancellor",
-        items: [
-            { name: "Dr. Mohammed Shamim Uddin Khan", phone: "+8801711721486", email: "shamim@cu.ac.bd" },
-            { name: "Md. Kamal Uddin", phone: "+8801718306616", email: "kamalircu@yahoo.com" }
+            { name: "প্রভোষ্ট ১", phone: "+880223344556", email: "provost1@cu.ac.bd" },
+            { name: "প্রভোষ্ঠ ২", phone: "+880334455667", email: "provost2@cu.ac.bd" },
         ],
     },
     {
@@ -36,15 +41,9 @@ export const universityData = [
             { name: "Dr. Mohammed Saiful Islam", phone: "+880-31-717112", email: "eupatwary@cu.ac.bd" }
         ],
     },
+
     {
-        category: "Provosts",
-        items: [
-            { name: "প্রভোষ্ট ১", phone: "+880223344556", email: "provost1@cu.ac.bd" },
-            { name: "প্রভোষ্ঠ ২", phone: "+880334455667", email: "provost2@cu.ac.bd" },
-        ],
-    },
-    {
-        category: "Information Cell",
+        category: "ICT Cell",
         items: [
             { name: "Deputy Registrar (info)", phone: "01818555117", email: "cunewsinfo@gmail.com" },
         ],
