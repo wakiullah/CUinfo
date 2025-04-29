@@ -68,6 +68,13 @@ export const universityData = [
             { name: "Md. Thasinul Abedin", phone: "01887986020", email: "abedin@cu.ac.bd" },
         ],
     },
+    {
+        category: "Alumni Association",
+        items: [
+            { name: "President", phone: "017333577217", email: "cuaa@cu.ac.bd" },
+            { name: "General Secretary", phone: "01819311815", email: "https://cu-alumni.org/" },
+        ],
+    },
 ];
 
 
