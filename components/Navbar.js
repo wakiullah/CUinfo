@@ -1,23 +1,22 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
-import { FaTimes } from 'react-icons/fa'; // Import FaTimes for the close button
+import { FaTimes } from 'react-icons/fa'; 
 
 const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu
+    const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+        setIsMenuOpen(!isMenuOpen); 
     };
 
+    
     return (
         <nav className={`sticky top-0 flex items-center justify-between md:px-20 p-3 py-4 dark:bg-gray-800 dark:text-white bg-gray-100 text-gray-800`}>
-            {/* Logo */}
             <div className="text-xl font-bold">
                 <Link href="/">CUinfo</Link>
             </div>
 
-            {/* Menu for larger screens */}
             <ul className="hidden md:flex space-x-6 font-semibold">
                 <li className="cursor-pointer hover:text-blue-500">
                     <Link href="/">Home</Link>
@@ -33,7 +32,7 @@ const Navbar = () => {
             <div className="md:hidden">
                 <button
                     className="p-2 focus:outline-none"
-                    onClick={toggleMenu} // Toggle menu on click
+                    onClick={toggleMenu} 
                 >
                     <span className="block w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
                     <span className="block w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
@@ -41,7 +40,6 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* Side Menu for Mobile */}
             <div
                 className={`fixed inset-0 bg-gray-400 bg-opacity-50 z-50 transition-opacity duration-300 ease-in-out ${isMenuOpen ? ' opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
@@ -53,7 +51,7 @@ const Navbar = () => {
                     <div className='text-right flex justify-end mt-3'>
                         <button
                             className="text-red-600 hover:text-red-900 dark:text-white mb-4 flex items-right text-right"
-                            onClick={toggleMenu} // Close menu on click
+                            onClick={toggleMenu} 
                         >
                             <FaTimes className="mr-2" /> Close
                         </button>

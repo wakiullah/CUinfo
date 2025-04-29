@@ -2,6 +2,7 @@ import { IoMdArrowDropright } from "react-icons/io";
 import { CiSquareInfo } from "react-icons/ci";
 
 const SingleDataInfo = ({ title, data, handleButtonClick }) => {
+    
     return (
         < >
             <h1 className="md:text-4xl text-2xl font-bold mb-8 text-center flex">{title}<CiSquareInfo className="ml-3 text-2xl md:mt-1" /> </h1>
