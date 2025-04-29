@@ -14,12 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const devanagari = Anek_Devanagari({
-  variable: "--font-anek-devanagari",
-  weight: ["400", "500", "600", "700"], // Ensure these weights are supported
-  display: "swap",
-  fallback: ["system-ui", "sans-serif"], // Fallback fonts
-});
+
 
 export const metadata = {
   title: "Create Next App",
@@ -36,7 +31,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased" style={{ fontFamily: "'Anek Devanagari', sans-serif" }}>
+      <body className="antialiased" style={{ fontFamily: "sans-serif" }}>
         <ToastContainer
           position="top-right"
           autoClose={3000}
@@ -50,7 +45,7 @@ export default function RootLayout({ children }) {
           theme="light"
           style={{ fontFamily: "Anek Devanagari" }}
         />
-      
+
         <Navbar />
         {children}
         <Footer />

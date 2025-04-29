@@ -6,7 +6,7 @@ export const universityData = [
         ],
     },
     {
-        category: "প্রক্টরের নাম্বার সমূহ",
+        category: "Proctors",
         items: [
             { name: "Dr. Tanvir Mohammad Hayder Arif", phone: "+8801819387122", email: "proctor@cu.ac.bd" },
             { name: "Dr. Md. Korban Ali", phone: "01716609315", email: "korban.cu@gmail.com" },
@@ -37,7 +37,7 @@ export const universityData = [
         ],
     },
     {
-        category: "হলের প্রভোষ্ট",
+        category: "Provosts",
         items: [
             { name: "প্রভোষ্ট ১", phone: "+880223344556", email: "provost1@cu.ac.bd" },
             { name: "প্রভোষ্ঠ ২", phone: "+880334455667", email: "provost2@cu.ac.bd" },
@@ -47,7 +47,6 @@ export const universityData = [
         category: "Information Cell",
         items: [
             { name: "Deputy Registrar (info)", phone: "01818555117", email: "cunewsinfo@gmail.com" },
-            { name: "প্রভোষ্ঠ ২", phone: "+880334455667", email: "provost2@cu.ac.bd" },
         ],
     },
     {
@@ -57,7 +56,7 @@ export const universityData = [
         ],
     },
     {
-        category: "স্নেক রেসকিউ",
+        category: "Snake Rescue",
         items: [
             { name: "3sA", phone: "01710-964864", email: "3saawareness@gmail.com" }
         ],
@@ -90,17 +89,24 @@ export const othersInfo = [
         ],
     },
     {
-        category: "থানা",
+        category: "Thana",
         items: [
-            { name: "কোতোয়ালি থানা", phone: "+880312345678", email: "kotwali@police.gov.bd" },
-            { name: "পাঁচলাইশ থানা", phone: "+880312345679", email: "panchlaish@police.gov.bd" },
+            { name: "Hathazari Thana", phone: "+8801713-373640", email: "kotwali@police.gov.bd" },
+            { name: "Kotwali Thana", phone: "+8801713373256", email: "kotwali@police.gov.bd" },
+            { name: "Chandgaon Thana", phone: "+8801713-373259", email: "Empty" },
+            { name: "Halishahar Thana", phone: "+8801713-373269", email: "Empty" },
+            { name: "Fatikchhari Thana", phone: "+8801713-373641", email: "Empty" },
+            { name: "Sandwip Thana", phone: "+88	01713-373652", email: "Empty" },
+            { name: "Anwara Thana", phone: "+8801713-373646", email: "Empty" },
+            { name: "Banshkhali Thana", phone: "+8801713-373648", email: "Empty" },
+
         ],
     },
     {
-        category: "ফায়ার সার্ভিস",
+        category: "Fire Service",
         items: [
-            { name: "চট্টগ্রাম ফায়ার সার্ভিস", phone: "01730336666", email: "02333316326" },
-            { name: "হাটহাজারী ফায়ার সার্ভিস", phone: "01901021575", email: "hathazari@fireservice.gov.bd" },
+            { name: "Chittagong Fire Service", phone: "01730336666", email: "02333316326" },
+            { name: "Hathhazari Fire Service", phone: "01901021575", email: "hathazari@fireservice.gov.bd" },
         ],
     },
     {
@@ -130,8 +136,7 @@ export const othersInfo = [
             { name: 'Sundarban- Hathazari Branch ', phone: '01915704142', email: 'https://www.sundarbancourierltd.com/' },
             { name: 'Shodagor Express- Hathazari Branch ', phone: '01915704142', email: 'Hathazari Branch' },
             { name: 'A.J.R Parcel- Hathazari', phone: '01958587384', email: '' },
-            { name: 'S. A. Paribahan ', phone: '01766688363', email: 'Hathazari Branch' },
-            { name: '', phone: '', email: 'Hathazari Branch' },
+            { name: 'SA Paribahan ', phone: '01766688363', email: 'Hathazari Branch' },
         ]
     }
 

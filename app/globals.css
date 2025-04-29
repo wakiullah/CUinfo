@@ -7,7 +7,6 @@
   --foreground: #171717;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-anek: var(--font-anek-devanagari);
   /* Add this line */
 }
 
@@ -21,6 +20,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-anek), sans-serif;
-  /* Apply Anek Devanagari font */
+  font-family: sans-serif;
 }
