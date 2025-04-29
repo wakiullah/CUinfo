@@ -76,7 +76,7 @@ const Main = () => {
                     className="font-semibold dark:text-white text-gray-800 cursor-pointer hover:underline flex items-center"
                     onClick={() => handleNameClick(item)}
                   >
-                    <IoMdArrowDropright className="mr-2" /> <span className="mt-[6px]">{item.name}</span>
+                    <IoMdArrowDropright className="mr-2 mt-1" /> <span className="mt-[6px]">{item.name}</span>
                   </p>
                   {selectedItem === item && (
                     <div className="mt-2">
