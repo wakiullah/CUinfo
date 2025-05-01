@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
 import type { Metadata } from 'next';
-
+import CULOGO from "@/public/culogo.png"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
