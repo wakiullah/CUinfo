@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
+import type { Metadata } from 'next';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,10 +18,26 @@ const geistMono = Geist_Mono({
 
 
 export const metadata = {
-  title: "CUinfo",
-  description: " CUinfo is a platform for Chittagong University students to find information about their campus, including shuttle schedules, events, and more.",
-};
+  };
 
+export const metadata: Metadata = {
+ title: "CUinfo",
+  description: " CUinfo is a platform for Chittagong University students to find information about their campus, including shuttle schedules, events, and more.",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/images/light-icon.png',
+        href: '/images/light-icon.png',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/images/dark-icon.png',
+        href: '/images/dark-icon.png',
+      },
+    ],
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
