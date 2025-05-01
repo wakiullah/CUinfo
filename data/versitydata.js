@@ -1,6 +1,6 @@
 export const universityData = [
     {
-        category: "Embulance",
+        category: "Ambulance",
         items: [
             { name: "Medical Center", phone: "​+8801764565703​", email: "Empty" }
         ],
@@ -132,7 +132,7 @@ export const othersInfo = [
         category: "Bus Counter",
         items: [
             { name: "Hanif Enterprise- Hathazari", phone: "01788378604", email: "Empty" },
-            { name: "Hanif Enterprise- Variary", phone: "01788378604", email: "Empty" },
+            { name: "Hanif Enterprise- Vatiary", phone: "01788378604", email: "Empty" },
             { name: "Shyamoli Paribahan – 1No Gate", phone: "01730270106", email: "" },
             { name: "Shyamoli Paribahan – Vatiary", phone: "01918-880371", email: "" },
             { name: "Star Line- Vatiary", phone: "01973259684", email: "" },
