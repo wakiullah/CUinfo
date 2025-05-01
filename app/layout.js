@@ -3,8 +3,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/footer";
 import { ToastContainer } from "react-toastify";
-import type { Metadata } from 'next';
-import CULOGO from "@/public/culogo.png"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,23 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 
-export const metadata: Metadata = {
- title: "CUinfo",
+export const metadata = {
+  title: "CUinfo",
   description: " CUinfo is a platform for Chittagong University students to find information about their campus, including shuttle schedules, events, and more.",
-  icons: {
-    icon: [
-      {
-        media: '(prefers-color-scheme: light)',
-        url: CULOGO,
-        href: CULOGO,
-      },
-      {
-        media: '(prefers-color-scheme: dark)',
-        url: CULOGO,
-        href: CULOGO,
-      },
-    ],
-  },
 };
 
 export default function RootLayout({ children }) {
