@@ -16,10 +16,6 @@ const geistMono = Geist_Mono({
 });
 
 
-
-export const metadata = {
-  };
-
 export const metadata: Metadata = {
  title: "CUinfo",
   description: " CUinfo is a platform for Chittagong University students to find information about their campus, including shuttle schedules, events, and more.",
@@ -27,13 +23,13 @@ export const metadata: Metadata = {
     icon: [
       {
         media: '(prefers-color-scheme: light)',
-        url: '/images/light-icon.png',
-        href: '/images/light-icon.png',
+        url: CULOGO,
+        href: CULOGO,
       },
       {
         media: '(prefers-color-scheme: dark)',
-        url: '/images/dark-icon.png',
-        href: '/images/dark-icon.png',
+        url: CULOGO,
+        href: CULOGO,
       },
     ],
   },
