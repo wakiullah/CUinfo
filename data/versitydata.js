@@ -31,8 +31,8 @@ export const universityData = [
     {
         category: "Provosts",
         items: [
-            { name: "প্রভোষ্ট ১", phone: "+880223344556", email: "provost1@cu.ac.bd" },
-            { name: "প্রভোষ্ঠ ২", phone: "+880334455667", email: "provost2@cu.ac.bd" },
+            { name: "প্রভোষ্ট ১", phone: "প্রভোস্টদের নাম্বার সংগ্রহ করা যায়নি। আপনাদের কাছে থাকলে কমেন্টে জানান।", email: "provost1@cu.ac.bd" },
+            { name: "প্রভোষ্ঠ ২", phone: "প্রভোস্টদের নাম্বার সংগ্রহ করা যায়নি। আপনাদের কাছে থাকলে Inform Missing এ জানান।", email: "provost2@cu.ac.bd" },
         ],
     },
     {
