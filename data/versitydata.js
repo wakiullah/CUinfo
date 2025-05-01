@@ -75,7 +75,7 @@ export const universityData = [
         ],
     },
      {
-        category: "Drutojan Bus Complaint Number",
+        category: "Drutojan Bus Complaint No.",
         items: [
             { name: "Bus Association", phone: "01818083313", email: "Empty" },
         ],
