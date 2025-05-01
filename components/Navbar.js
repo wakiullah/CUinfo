@@ -40,7 +40,7 @@ const Navbar = () => {
                 </button>
             </div>
 
-            <div  onClick={toggleMenu}
+            <div 
                 className={`fixed inset-0 bg-gray-400 bg-opacity-50 z-50 transition-opacity duration-300 ease-in-out ${isMenuOpen ? ' opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
             >
