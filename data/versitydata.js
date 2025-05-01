@@ -74,6 +74,12 @@ export const universityData = [
             { name: "General Secretary", phone: "01819311815", email: "https://cu-alumni.org/" },
         ],
     },
+     {
+        category: "Drutojan Bus Complaint Number",
+        items: [
+            { name: "Bus Association", phone: "01818083313", email: "Empty" },
+        ],
+    },
 ];
 
 
