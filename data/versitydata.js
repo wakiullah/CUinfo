@@ -82,7 +82,6 @@ export const universityData = [
     },
 ];
 
-
 export const othersInfo = [
     {
         category: "Hospital",
